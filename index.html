@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Form Template</title>
+     <title>Data Processing</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/main-forms.css">
+  <link rel="stylesheet" href="css/main-form.css">
  </head>
  <body>
      <header>
-     <h1 class="page-header">Form Template</h1>
+     <h1 class="page-header">Data Processing</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
             <a href="#">Link</a>
@@ -20,31 +20,44 @@
      </header>
      
    <main class="wrapper">
+    
  
-    <h2 class="subheader">Place form code below:</h2>
+    <h2 class="subheader">Shipping Info:</h2>
     <form method="get" action="" calss="main-form">
       <dive>
         <lable for="FirstName">First Name</lable><br>
-        <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required autofocus>
+        <input type="text" name="First_Name" id="FirstName" placeholder="First Name" required autofocus>
       </div>
+
       <div>
         <lable for="LasttName">Last Name</lable><br>
-        <input type="text" name="LasttName" id="LasttName" placeholder="Last Name" required>
+        <input type="text" name="Last_Name" id="LasttName" placeholder="Last Name" required>
       </div>
-      <div>
+
+      
         <dive>
           <lable for="Email">Email</lable><br>
           <input type="email" name="Email" id="Email" placeholder="Email" required>
         </div>
-        
+
+        <div>
+        <lable for="Phone">Phone</lable><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required>
       </div>
+    
+      
       <div>
         <lable for="Address">Address</lable><br>
         <input type="text" name="Address" id="Address" placeholder="Address" required>
       </div>
 
       <div>
-        <lable for="State"><State</lable><br>
+        <lable for="City">City</lable><br>
+        <input type="text" name="City" id="City" placeholder="City" required>
+      </div>
+
+      <div>
+        <lable for="State">State</lable><br>
         <select name="state" id="state" required>
           <option value="">Please select state</option>
           <option value="AK">Alaska</option>
@@ -54,29 +67,14 @@
         </select>
       </div>
 
-
-
       <div>
-        <fieldset>
-          <legend>Would you like to join our mailing list?</legend>
-          <lable><input type="radio" name="JoinMailingList" value="Yes" required> Yes</lable><br>
-          <lable><input type="radio" name="JoinMailingList" value="No"> No</lable>
-        </fieldset>
+        <lable for="Postal ode">Postal Code</lable><br>
+        <input type="text" name="Postal_Code" id="PostalCode" placeholder="Postal Code" required>
       </div>
 
       <div>
-        <fieldset>
-          <legend>Interested In</legend>
-          <lable><input type="checkbox" name="InterestedIn" value="Website" required> Website</lable><br>
-          <lable><input type="checkbox" name="InterestedIn" value="onlineCalender"> Online Calender</lable><br>
-          <lable><input type="checkbox" name="InterestedIn" value="ContactForm"> Contact Form</lable><br>
-          <lable><input type="checkbox" name="InterestedIn" value="Lollipops"> Complimentary Lollipops</lable><br>
-        </fieldset>
-      </div>
-
-      <div>
-        <lable for="Comments">Comments</lable><br>
-        <textarea name="Comments" id="Comments" placeholder="Comments" cols="36" rows="4"></textarea>
+        <lable for="Notes">Notes</lable><br>
+        <textarea name="Notes" id="Notes" placeholder="Notes" cols="36" rows="4"></textarea>
       </div>
 
       <div>
