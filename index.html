@@ -22,6 +22,7 @@
      
    <main class="wrapper">
     <dive id="output">
+    <form method="get" action="" calss="main-form">
     <h2 class="subheader">Cart</h2>
     
     <div id="widgets">
@@ -30,25 +31,27 @@
           <p>Our Widgets are spring loaded and need no batteries!</p>
           <p>At $3.99 they're a bargain!</p>
           <div class="pic"><img src="images/widget.png" /></div>
+          <p><label><input type="checkbox" name="Cart" value="Widget" /> Add to Cart</label></p>
       </div>
       <div>
           <b>Sprocket</b><br />
           <p>Our Sprockets are well made and hold up to extreme pressure!</p>
           <p>They only cost $5.99!</p>
           <div class="pic"><img src="images/sprocket.png" /></div>
+          <p><label><input type="checkbox" name="Cart" value="Sprocket" /> Add to Cart</label></p>
       </div>
       <div>
           <b>Thingy</b><br />
           <p>Our Thingys have many uses, and people come up with new ones all the time!</p>
           <p>Such a deal at $1.99!</p>
           <div class="pic"><img src="images/thingy.png" /></div>
+          <p><label><input type="checkbox" name="Cart" value="Thingy" /> Add to Cart</label></p>
       </div>
   </div>
     
  
     <h2 class="subheader">Shipping Info:</h2>
     
-    <form method="get" action="" calss="main-form">
       <dive>
         <lable for="FirstName">First Name</lable><br>
         <input type="text" name="First_Name" id="FirstName" placeholder="First Name" required autofocus>

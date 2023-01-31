@@ -9,7 +9,16 @@ if(queryString.length > 0){
     let myData = "";
 
     urlParams.forEach(function(value, key) {
-        //swaps underscore for space 
+        
+      if(key == "Cart"){//cart
+        alert("Cart Item: " + value);
+
+      }else{//shipping label 
+        key = key.split("_").join(" ");
+
+      }
+      
+      //swaps underscore for space 
         key = key.split("_").join(" ");
 
         myData += `<p>${key}: ${value}</p>`;
